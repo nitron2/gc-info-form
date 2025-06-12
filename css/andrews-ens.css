@@ -1,0 +1,33 @@
+/* Andrews University Styling for Emergency Notification System (ENS) */
+#ens {
+  padding: 10px;
+  font-size: 15px;
+}
+#ens p {
+  margin: 0;
+  display: inline;
+}
+#ens a {
+  color: #fff;
+  text-decoration: underline;
+}
+#ens.nonpriority,
+.enspreview.nonpriority {
+  background: #be9549;
+  color: #fff;
+}
+#ens.informational,
+.enspreview.informational {
+  background: #41B326;
+  color: #fff;
+}
+#ens.snow,
+.enspreview.snow {
+  background: #d58512;
+  color: #fff;
+}
+#ens.emergency,
+.enspreview.emergency {
+  background: #ca2028;
+  color: #fff;
+}
