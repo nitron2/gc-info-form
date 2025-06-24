@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Rotating Kiosk</title>
+  <style>
+    html, body, iframe {
+      margin: 0; padding: 0;
+      width: 100%; height: 100%;
+      border: none;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <iframe id="rotator" src="https://andrews.edu"></iframe>
+
+  <script>
+    const urls = [
+      "https://example.com",
+      "https://second.com",
+      "https://third.com"
+    ];
+    let index = 0;
+    const interval = 15000; // 15 seconds
+
+    setInterval(() => {
+      index = (index + 1) % urls.length;
+      document.getElementById("rotator").src = urls[index];
+    }, interval);
+  </script>
+</body>
+</html>
